@@ -6,7 +6,7 @@ from langchain.memory import ConversationBufferMemory
 st.title("智能PDF问答工具")
 
 with st.sidebar:
-    api_key = st.text_input("请输入你的OpenAI API密钥：")
+    api_key = st.text_input("请输入你的OpenAI API密钥：",type="password")
     st.markdown("[获取OpenAI API密钥](https://2233.ai/api)")
 
     # 上传文件
